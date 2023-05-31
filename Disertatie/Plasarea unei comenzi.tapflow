@@ -1,0 +1,117 @@
+<RobotDefinition robotId="2770" robotName="Plasarea unei comenzi" editPoint="587,367" editZoom="1">
+  <controlIdentifiers>
+    <ctrlID name="[None]">
+      <window proc="" cls="" caption="" framework="win32" />
+    </ctrlID>
+    <ctrlID name="proceedToCheckoutButton">
+      <window framework="chrome" caption="automationexercise.com/view_cart" />
+      <web controlType="section" id="do_action" />
+      <web cls="container" controlType="div" />
+      <web cls="row" controlType="div" />
+      <web cls="col-sm-6" controlType="div" />
+      <web cls="btn.btn-default.check_out" controlType="a" />
+    </ctrlID>
+    <ctrlID name="placeOrderButton">
+      <window framework="chrome" caption="automationexercise.com/checkout" />
+      <web controlType="section" id="cart_items" />
+      <web cls="container" controlType="div" />
+      <web controlType="div" />
+      <web cls="btn.btn-default.check_out" controlType="a" href="/payment" />
+    </ctrlID>
+    <ctrlID name="waitTotalAmount">
+      <window framework="chrome" caption="automationexercise.com/checkout" />
+      <web cls="table-responsive.cart_info" controlType="div" id="cart_info" />
+      <web cls="table.table-condensed" controlType="table" />
+      <web controlType="tbody" />
+      <web controlType="tr" controlIndex="2" />
+      <web controlType="td" controlIndex="4" />
+      <web cls="cart_total_price" controlType="p" />
+    </ctrlID>
+    <ctrlID name="checkPaymentForm">
+      <window framework="chrome" caption="automationexercise.com/payment" />
+      <web controlType="section" id="cart_items" />
+      <web cls="container" controlType="div" />
+      <web cls="step-one" controlType="div" />
+      <web cls="heading" controlType="h2" />
+    </ctrlID>
+    <ctrlID name="nameInput">
+      <window framework="chrome" caption="automationexercise.com/payment" />
+      <web controlType="form" id="payment-form" />
+      <web cls="form-row" controlType="div" />
+      <web cls="col-sm-12.form-group" controlType="div" />
+      <web cls="form-control" controlType="input" />
+    </ctrlID>
+    <ctrlID name="cardNInput">
+      <window framework="chrome" caption="automationexercise.com/payment" />
+      <web controlType="form" id="payment-form" />
+      <web cls="form-row" controlType="div" />
+      <web cls="col-sm-12.form-group.card" controlType="div" />
+      <web cls="form-control.card-number" controlType="input" />
+    </ctrlID>
+    <ctrlID name="cvvInput">
+      <window framework="chrome" caption="automationexercise.com/payment" />
+      <web controlType="form" id="payment-form" />
+      <web cls="form-row" controlType="div" />
+      <web cls="col-sm-4.form-group.cvc" controlType="div" />
+      <web cls="form-control.card-cvc" controlType="input" />
+    </ctrlID>
+    <ctrlID name="monthInput">
+      <window framework="chrome" caption="automationexercise.com/payment" />
+      <web controlType="form" id="payment-form" />
+      <web cls="form-row" controlType="div" />
+      <web cls="col-sm-4.form-group.expiration" controlType="div" />
+      <web cls="form-control.card-expiry-month" controlType="input" />
+    </ctrlID>
+    <ctrlID name="yearInput">
+      <window framework="chrome" caption="automationexercise.com/payment" />
+      <web controlType="form" id="payment-form" />
+      <web cls="form-row" controlType="div" />
+      <web cls="col-sm-4.form-group.expiration" controlType="div" />
+      <web cls="form-control.card-expiry-year" controlType="input" />
+    </ctrlID>
+    <ctrlID name="payButton">
+      <window framework="chrome" caption="automationexercise.com/payment" />
+      <web cls="form-control.btn.btn-primary.submit-button" controlType="button" id="submit" />
+    </ctrlID>
+    <ctrlID name="checkorderPlacedText">
+      <window framework="chrome" caption="automationexercise.com/payment_done/" />
+      <web controlType="section" id="form" />
+      <web cls="container" controlType="div" />
+      <web cls="row" controlType="div" />
+      <web cls="col-sm-9.col-sm-offset-1" controlType="div" />
+      <web cls="title.text-center" controlType="h2" />
+      <web controlType="b" />
+    </ctrlID>
+  </controlIdentifiers>
+  <variables />
+  <arguments />
+  <actions>
+    <sequence id="1768" name="Plasarea unei comenzi" positionX="12" positionY="217" startNodePosition="50,25" fromConnector="c7" toConnector="c2" startPath="">
+      <transitions>
+        <transition id="2771" name="" condition="true" type="Normal" sourceSequence="1768" targetSequence="1775" fromConnector="c5" toConnector="c4" />
+      </transitions>
+      <action id="1771" type="Web.Browser.ClickElement" ctrlIdRef="proceedToCheckoutButton" selector="&quot;.btn.btn-default.check_out&quot;" url="&quot;automationexercise.com/view_cart&quot;" displayName="Click Proceed to Checkout" waitBefore="150" waitAfter="2000" abortOnError="True" retryTimes="0" />
+      <action id="1773" type="Web.Browser.WaitForAttribute" ctrlIdRef="waitTotalAmount" selector="&quot;tbody tr td:nth-child(4) p:nth-child(1)&quot;" url="&quot;automationexercise.com/checkout&quot;" timeout="10000" _attrName="" _attrValue="" displayName="Wait For Element Attribute" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+      <action id="1774" type="Web.Browser.ClickElement" ctrlIdRef="placeOrderButton" selector="&quot;.btn.btn-default.check_out&quot;" url="&quot;automationexercise.com/checkout&quot;" displayName="Click Place Order Button" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+    </sequence>
+    <sequence id="1775" name="Payment Form" positionX="381" positionY="65">
+      <transitions>
+        <transition id="2772" name="" condition="true" type="Normal" sourceSequence="1775" targetSequence="1894" fromConnector="c5" toConnector="c4" />
+      </transitions>
+      <action id="1777" type="Web.Browser.WaitForAttribute" ctrlIdRef="checkPaymentForm" selector="&quot;.heading&quot;" url="&quot;automationexercise.com/payment&quot;" timeout="10000" _attrName="" _attrValue="" displayName="Wait For Element Attribute" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+      <action id="1779" type="Web.Browser.SetElementText" ctrlIdRef="nameInput" selector="&quot;form#payment-form &gt; div.form-row &gt; div.col-sm-12.form-group &gt; input.form-control&quot;" url="&quot;automationexercise.com/payment&quot;" value="&quot;Mihail Durnea&quot;" displayName="Set Name" waitBefore="150" waitAfter="1000" abortOnError="True" retryTimes="0" />
+      <action id="1778" type="Web.Browser.SetElementText" ctrlIdRef="cardNInput" selector="&quot;form#payment-form &gt; div.form-row &gt; div.col-sm-12.form-group.card &gt; input.form-control.card-number&quot;" url="&quot;automationexercise.com/payment&quot;" value="&quot;6598142556322141&quot;" displayName="Set Card number" waitBefore="150" waitAfter="1000" abortOnError="True" retryTimes="0" />
+      <action id="1780" type="Web.Browser.SetElementText" ctrlIdRef="cvvInput" selector="&quot;form#payment-form &gt; div.form-row &gt; div.col-sm-4.form-group.cvc &gt; input.form-control.card-cvc&quot;" url="&quot;automationexercise.com/payment&quot;" value="&quot;985&quot;" displayName="Set CVV" waitBefore="150" waitAfter="1000" abortOnError="True" retryTimes="0" />
+      <action id="1781" type="Web.Browser.SetElementText" ctrlIdRef="monthInput" selector="&quot;form#payment-form &gt; div.form-row &gt; div.col-sm-4.form-group.expiration &gt; input.form-control.card-expiry-month&quot;" url="&quot;automationexercise.com/payment&quot;" value="&quot;05&quot;" displayName="Set Date" waitBefore="150" waitAfter="1000" abortOnError="True" retryTimes="0" />
+      <action id="1782" type="Web.Browser.SetElementText" ctrlIdRef="yearInput" selector="&quot;form#payment-form &gt; div.form-row &gt; div.col-sm-4.form-group.expiration &gt; input.form-control.card-expiry-year&quot;" url="&quot;automationexercise.com/payment&quot;" value="&quot;2025&quot;" displayName="Set Year" waitBefore="150" waitAfter="1000" abortOnError="True" retryTimes="0" />
+      <action id="1783" type="Web.Browser.ClickElement" ctrlIdRef="payButton" selector="&quot;button#submit&quot;" url="&quot;automationexercise.com/payment&quot;" displayName="Click Pay Button" waitBefore="150" waitAfter="3000" abortOnError="True" retryTimes="0" />
+      <action id="1802" type="Web.Browser.WaitForAttribute" ctrlIdRef="checkorderPlacedText" selector="&quot;h2[class='title text-center'] b&quot;" url="&quot;automationexercise.com/payment_done/&quot;" timeout="10000" _attrName="" _attrValue="" displayName="Wait Order Placed Text" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+      <action id="1821" type="Logging.ConsoleWrite" output="&quot;Comanda a fost achitata cu succes!&quot;" displayName="Comanda plasata cu succes" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+      <action id="1897" type="Web.Browser.ClickElement" ctrlIdRef="checkContinueButton" selector="&quot;.btn.btn-primary&quot;" url="&quot;automationexercise.com/payment_done&quot;" displayName="Click Element" waitBefore="150" waitAfter="3000" abortOnError="True" retryTimes="0" />
+    </sequence>
+    <invoke id="1894" name="Invoke Workflow" invokeWorkflow="&quot;Stergere Cont + Verificare Logare.tapflow&quot;" positionX="783" positionY="235">
+      <transitions />
+      <arguments />
+    </invoke>
+  </actions>
+</RobotDefinition>

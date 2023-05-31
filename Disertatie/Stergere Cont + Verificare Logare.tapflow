@@ -1,0 +1,100 @@
+<RobotDefinition robotId="2778" robotName="Stergere Cont + Verificare Logare" editPoint="587,298" editZoom="1">
+  <controlIdentifiers>
+    <ctrlID name="[None]">
+      <window proc="" cls="" caption="" framework="win32" />
+    </ctrlID>
+    <ctrlID name="deleteAcountButton">
+      <window framework="chrome" caption="automationexercise.com" />
+      <web controlType="header" id="header" />
+      <web cls="header-middle" controlType="div" />
+      <web cls="container" controlType="div" />
+      <web cls="row" controlType="div" />
+      <web cls="col-sm-8" controlType="div" />
+      <web cls="shop-menu.pull-right" controlType="div" />
+      <web cls="nav.navbar-nav" controlType="ul" />
+      <web controlType="li" />
+      <web controlType="a" href="/delete_account" />
+    </ctrlID>
+    <ctrlID name="checkAccountDeleted">
+      <window framework="chrome" caption="automationexercise.com/delete_account" />
+      <web controlType="section" id="form" />
+      <web cls="container" controlType="div" />
+      <web cls="row" controlType="div" />
+      <web cls="col-sm-9.col-sm-offset-1" controlType="div" />
+      <web cls="title.text-center" controlType="h2" />
+      <web controlType="b" />
+    </ctrlID>
+    <ctrlID name="loginbutton">
+      <window framework="chrome" caption="automationexercise.com/delete_account" />
+      <web controlType="header" id="header" />
+      <web cls="header-middle" controlType="div" />
+      <web cls="container" controlType="div" />
+      <web cls="row" controlType="div" />
+      <web cls="col-sm-8" controlType="div" />
+      <web cls="shop-menu.pull-right" controlType="div" />
+      <web cls="nav.navbar-nav" controlType="ul" />
+      <web controlType="li" />
+      <web controlType="a" href="/login" />
+    </ctrlID>
+    <ctrlID name="emailInput">
+      <window framework="chrome" caption="automationexercise.com/login" />
+      <web controlType="section" id="form" />
+      <web cls="container" controlType="div" />
+      <web cls="row" controlType="div" />
+      <web cls="col-sm-4.col-sm-offset-1" controlType="div" />
+      <web cls="login-form" controlType="div" />
+      <web controlType="form" />
+      <web controlType="input" />
+    </ctrlID>
+    <ctrlID name="passInput">
+      <window framework="chrome" caption="automationexercise.com/login" />
+      <web controlType="section" id="form" />
+      <web cls="container" controlType="div" />
+      <web cls="row" controlType="div" />
+      <web cls="col-sm-4.col-sm-offset-1" controlType="div" />
+      <web cls="login-form" controlType="div" />
+      <web controlType="form" />
+      <web controlType="input" />
+    </ctrlID>
+    <ctrlID name="checkIncorrectEmailorPass">
+      <window framework="chrome" caption="automationexercise.com/login" />
+      <web controlType="section" id="form" />
+      <web cls="container" controlType="div" />
+      <web cls="row" controlType="div" />
+      <web cls="col-sm-4.col-sm-offset-1" controlType="div" />
+      <web cls="login-form" controlType="div" />
+      <web controlType="form" />
+      <web controlType="p" />
+    </ctrlID>
+    <ctrlID name="loginButton">
+      <window framework="chrome" caption="automationexercise.com/login" />
+      <web controlType="section" id="form" />
+      <web cls="container" controlType="div" />
+      <web cls="row" controlType="div" />
+      <web cls="col-sm-4.col-sm-offset-1" controlType="div" />
+      <web cls="login-form" controlType="div" />
+      <web controlType="form" />
+      <web cls="btn.btn-default" controlType="button" />
+    </ctrlID>
+  </controlIdentifiers>
+  <variables />
+  <arguments />
+  <actions>
+    <sequence id="1895" name="Stergere Cont" positionX="50" positionY="200" startNodePosition="50,25" fromConnector="c7" toConnector="c2" startPath="">
+      <transitions>
+        <transition id="2779" name="" condition="true" type="Normal" sourceSequence="1895" targetSequence="1901" fromConnector="c5" toConnector="c4" />
+      </transitions>
+      <action id="1898" type="Web.Browser.ClickElement" ctrlIdRef="deleteAcountButton" selector="&quot;a[href='/delete_account']&quot;" url="&quot;automationexercise.com&quot;" displayName="Click Delete Account Button" waitBefore="150" waitAfter="1500" abortOnError="True" retryTimes="0" />
+      <action id="1899" type="Web.Browser.WaitForAttribute" ctrlIdRef="checkAccountDeleted" selector="&quot;section#form &gt; div.container &gt; div.row &gt; div.col-sm-9.col-sm-offset-1 &gt; h2.title.text-center &gt; b&quot;" url="&quot;automationexercise.com/delete_account&quot;" timeout="10000" _attrName="" _attrValue="" displayName="Wait For Deleted succesfully" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+      <action id="1902" type="Web.Browser.ClickElement" ctrlIdRef="loginbutton" selector="&quot;a[href='/login']&quot;" url="&quot;automationexercise.com/delete_account&quot;" displayName="Click Login" waitBefore="150" waitAfter="2000" abortOnError="True" retryTimes="0" />
+    </sequence>
+    <sequence id="1901" name="Verificare logare " positionX="466" positionY="208">
+      <transitions />
+      <action id="1903" type="Web.Browser.SetElementText" ctrlIdRef="emailInput" selector="&quot;input[data-qa='login-email']&quot;" url="&quot;automationexercise.com/login&quot;" value="&quot;mihai521918210@gmail.com&quot;" displayName="Set Email" waitBefore="150" waitAfter="1500" abortOnError="True" retryTimes="0" />
+      <action id="1904" type="Web.Browser.SetElementText" ctrlIdRef="passInput" selector="&quot;input[placeholder='Password']&quot;" url="&quot;automationexercise.com/login&quot;" value="&quot;Mihail98&quot;" displayName="Set Password" waitBefore="150" waitAfter="1500" abortOnError="True" retryTimes="0" />
+      <action id="1990" type="Web.Browser.ClickElement" ctrlIdRef="loginButton" selector="&quot;button[data-qa='login-button']&quot;" url="&quot;automationexercise.com/login&quot;" displayName="Click Login" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+      <action id="1926" type="Web.Browser.WaitForAttribute" ctrlIdRef="checkIncorrectEmailorPass" selector="&quot;section#form &gt; div.container &gt; div.row &gt; div.col-sm-4.col-sm-offset-1 &gt; div.login-form &gt; form &gt; p&quot;" url="&quot;automationexercise.com/login&quot;" timeout="10000" _attrName="" _attrValue="" displayName="Wait For Incorrect details" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+      <action id="1992" type="Logging.ConsoleWrite" output="&quot;Profil sters cu succes!&quot;" displayName="Write To Console" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+    </sequence>
+  </actions>
+</RobotDefinition>

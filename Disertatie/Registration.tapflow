@@ -1,0 +1,166 @@
+<RobotDefinition robotId="2773" robotName="Registration" editPoint="580,279" editZoom="1">
+  <controlIdentifiers>
+    <ctrlID name="[None]">
+      <window proc="ScreenClippingHost.exe" cls="Windows.UI.Core.CoreWindow" caption="Screen Snipping" framework="win32" />
+      <ctrl cls="ScreenClippingControl" controlType="ControlType.Custom" controlIndex="0" />
+      <ctrl cls="Button" controlType="ControlType.Button" controlIndex="4" text="Close Snipping Tool" />
+    </ctrlID>
+    <ctrlID name="NewControl1">
+      <window framework="chrome" caption="automationexercise.com/signup" />
+      <web cls="form-control" controlType="select" id="days" />
+    </ctrlID>
+    <ctrlID name="NewControl2">
+      <window framework="chrome" caption="automationexercise.com/signup" />
+      <web cls="form-control" controlType="select" id="months" />
+    </ctrlID>
+    <ctrlID name="NewControl3">
+      <window framework="chrome" caption="automationexercise.com/signup" />
+      <web cls="form-control" controlType="select" id="years" />
+    </ctrlID>
+    <ctrlID name="NameInput">
+      <window framework="chrome" caption="automationexercise.com/login" />
+      <web controlType="section" id="form" />
+      <web cls="container" controlType="div" />
+      <web cls="row" controlType="div" />
+      <web cls="col-sm-4" controlType="div" />
+      <web cls="signup-form" controlType="div" />
+      <web controlType="form" />
+      <web controlType="input" />
+    </ctrlID>
+    <ctrlID name="emailInput">
+      <window framework="chrome" caption="automationexercise.com/login" />
+      <web controlType="section" id="form" />
+      <web cls="container" controlType="div" />
+      <web cls="row" controlType="div" />
+      <web cls="col-sm-4" controlType="div" />
+      <web cls="signup-form" controlType="div" />
+      <web controlType="form" />
+      <web controlType="input" />
+    </ctrlID>
+    <ctrlID name="NewControl4">
+      <window framework="chrome" caption="automationexercise.com/signup" />
+      <web cls="form-control" controlType="input" id="password" />
+    </ctrlID>
+    <ctrlID name="nameInput1">
+      <window framework="chrome" caption="automationexercise.com/signup" />
+      <web cls="form-control" controlType="input" id="first_name" />
+    </ctrlID>
+    <ctrlID name="lastInput">
+      <window framework="chrome" caption="automationexercise.com/signup" />
+      <web cls="form-control" controlType="input" id="last_name" />
+    </ctrlID>
+    <ctrlID name="address">
+      <window framework="chrome" caption="automationexercise.com/signup" />
+      <web cls="form-control" controlType="input" id="address1" />
+    </ctrlID>
+    <ctrlID name="NewControl5">
+      <window framework="chrome" caption="automationexercise.com/signup" />
+      <web cls="form-control" controlType="input" id="address1" />
+    </ctrlID>
+    <ctrlID name="country">
+      <window framework="chrome" caption="automationexercise.com/signup" />
+      <web cls="form-control" controlType="select" id="country" />
+    </ctrlID>
+    <ctrlID name="state">
+      <window framework="chrome" caption="automationexercise.com/signup" />
+      <web cls="form-control" controlType="input" id="state" />
+    </ctrlID>
+    <ctrlID name="city">
+      <window framework="chrome" caption="automationexercise.com/signup" />
+      <web cls="form-control" controlType="input" id="city" />
+    </ctrlID>
+    <ctrlID name="zip">
+      <window framework="chrome" caption="automationexercise.com/signup" />
+      <web cls="form-control" controlType="input" id="zipcode" />
+    </ctrlID>
+    <ctrlID name="createAccount">
+      <window framework="chrome" caption="automationexercise.com/signup" />
+      <web controlType="section" id="form" />
+      <web cls="container" controlType="div" />
+      <web cls="row" controlType="div" />
+      <web cls="col-sm-4.col-sm-offset-1" controlType="div" />
+      <web cls="login-form" controlType="div" />
+      <web controlType="form" />
+      <web cls="btn.btn-default" controlType="button" />
+    </ctrlID>
+    <ctrlID name="mobile">
+      <window framework="chrome" caption="automationexercise.com/signup" />
+      <web cls="form-control" controlType="input" id="mobile_number" />
+    </ctrlID>
+    <ctrlID name="successAccountCreated">
+      <window framework="chrome" caption="automationexercise.com/account_created" />
+      <web controlType="section" id="form" />
+      <web cls="container" controlType="div" />
+      <web cls="row" controlType="div" />
+      <web cls="col-sm-9.col-sm-offset-1" controlType="div" />
+      <web cls="title.text-center" controlType="h2" />
+      <web controlType="b" />
+    </ctrlID>
+    <ctrlID name="continueButtonAfterRegister">
+      <window framework="chrome" caption="automationexercise.com/account_created" />
+      <web controlType="section" id="form" />
+      <web cls="container" controlType="div" />
+      <web cls="row" controlType="div" />
+      <web cls="col-sm-9.col-sm-offset-1" controlType="div" />
+      <web cls="pull-right" controlType="div" />
+      <web cls="btn.btn-primary" controlType="a" href="/" />
+    </ctrlID>
+    <ctrlID name="clickLogin">
+      <window framework="chrome" caption="automationexercise.com" />
+      <web controlType="li" />
+      <web controlType="a" href="/login" />
+    </ctrlID>
+  </controlIdentifiers>
+  <variables>
+    <variable name="num" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="random.Next(30);" />
+  </variables>
+  <arguments />
+  <actions>
+    <sequence id="193" name="HomePage" positionX="0" positionY="116" startNodePosition="0,0" fromConnector="c7" toConnector="c2" startPath="">
+      <transitions>
+        <transition id="2774" name="" condition="true" type="Normal" sourceSequence="193" targetSequence="585" fromConnector="c7" toConnector="c2" />
+      </transitions>
+      <action id="195" type="Web.Browser.OpenBrowser" url="&quot;https://automationexercise.com/&quot;" browser="Google Chrome" displayName="Open Browser" waitBefore="150" waitAfter="1500" abortOnError="True" retryTimes="0" />
+      <action id="196" type="Web.Browser.ClickElement" ctrlIdRef="clickLogin" selector="&quot;a[href='/login']&quot;" url="&quot;automationexercise.com&quot;" displayName="Click SignUp/Login" waitBefore="1000" waitAfter="1000" abortOnError="True" retryTimes="5" />
+    </sequence>
+    <sequence id="585" name="Login Page" positionX="18" positionY="350">
+      <transitions>
+        <transition id="2775" name="" condition="true" type="Normal" sourceSequence="585" targetSequence="586" fromConnector="c5" toConnector="c4" />
+      </transitions>
+      <action id="208" type="Web.Browser.SetElementText" ctrlIdRef="NameInput" selector="&quot;input[placeholder='Name']&quot;" url="&quot;automationexercise.com/login&quot;" value="&quot;MihailDurnea&quot;" displayName="Set Name" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="4" />
+      <action id="282" type="Web.Browser.SetElementText" ctrlIdRef="emailInput" selector="&quot;input[data-qa='signup-email']&quot;" url="&quot;automationexercise.com/login&quot;" value="&quot;mihai52191821&quot;+num+&quot;@gmail.com&quot;" displayName="Set Email" waitBefore="150" waitAfter="1000" abortOnError="True" retryTimes="5" />
+      <action id="301" type="Web.Browser.ClickElement" ctrlIdRef="" selector="&quot;button[data-qa='signup-button']&quot;" url="" displayName="Click SignUp" waitBefore="150" waitAfter="1000" abortOnError="True" retryTimes="5" />
+    </sequence>
+    <sequence id="586" name="Register Page" positionX="435" positionY="0">
+      <transitions>
+        <transition id="2776" name="" condition="true" type="Normal" sourceSequence="586" targetSequence="766" fromConnector="c5" toConnector="c4" />
+      </transitions>
+      <action id="288" type="Web.Browser.ClickElement" ctrlIdRef="" selector="&quot;#id_gender1&quot;" url="" displayName="Click Gender" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+      <action id="290" type="Web.Browser.SetElementText" ctrlIdRef="NewControl4" selector="&quot;input#password&quot;" url="&quot;automationexercise.com/signup&quot;" value="&quot;Mihail98&quot;" displayName="Set Password" waitBefore="150" waitAfter="1000" abortOnError="True" retryTimes="2" />
+      <action id="582" type="Web.Browser.SetElementText" ctrlIdRef="NewControl1" selector="&quot;select#days&quot;" url="&quot;automationexercise.com/signup&quot;" value="&quot;14&quot;" displayName="Set day" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+      <action id="583" type="Web.Browser.SetElementText" ctrlIdRef="NewControl2" selector="&quot;select#months&quot;" url="&quot;automationexercise.com/signup&quot;" value="4" displayName="Set month" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+      <action id="584" type="Web.Browser.SetElementText" ctrlIdRef="NewControl3" selector="&quot;select#years&quot;" url="&quot;automationexercise.com/signup&quot;" value="&quot;1998&quot;" displayName="Set year" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+      <action id="693" type="Web.Browser.SetElementText" ctrlIdRef="nameInput1" selector="&quot;input#first_name&quot;" url="&quot;automationexercise.com/signup&quot;" value="&quot;Mihail&quot;" displayName="Set Name" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+      <action id="694" type="Web.Browser.SetElementText" ctrlIdRef="lastInput" selector="&quot;input#last_name&quot;" url="&quot;automationexercise.com/signup&quot;" value="&quot;Durnea&quot;" displayName="Set Last" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+      <action id="695" type="Web.Browser.SetElementText" ctrlIdRef="address" selector="&quot;input#address1&quot;" url="&quot;automationexercise.com/signup&quot;" value="&quot;BD. Carol I nr.36&quot;" displayName="Set Address" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+      <action id="696" type="Web.Browser.SetElementText" ctrlIdRef="country" selector="&quot;select#country&quot;" url="&quot;automationexercise.com/signup&quot;" value="&quot;Australia&quot;" displayName="Set Country" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+      <action id="704" type="Web.Browser.SetElementText" ctrlIdRef="state" selector="&quot;input#state&quot;" url="&quot;automationexercise.com/signup&quot;" value="&quot;Australia&quot;" displayName="Set State" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+      <action id="705" type="Web.Browser.SetElementText" ctrlIdRef="city" selector="&quot;input#city&quot;" url="&quot;automationexercise.com/signup&quot;" value="&quot;Melbourne&quot;" displayName="Set city" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+      <action id="706" type="Web.Browser.SetElementText" ctrlIdRef="zip" selector="&quot;input#zipcode&quot;" url="&quot;automationexercise.com/signup&quot;" value="&quot;700482&quot;" displayName="Set zipcode" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+      <action id="707" type="Web.Browser.SetElementText" ctrlIdRef="mobile" selector="&quot;input#mobile_number&quot;" url="&quot;automationexercise.com/signup&quot;" value="&quot;0752064989&quot;" displayName="Set Mobile" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+      <action id="715" type="Web.Browser.ClickElement" ctrlIdRef="createAccount" selector="&quot;section#form &gt; div.container &gt; div.row &gt; div.col-sm-4.col-sm-offset-1 &gt; div.login-form &gt; form &gt; button.btn.btn-default&quot;" url="&quot;automationexercise.com/signup&quot;" displayName="Click CreateAcount " waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+    </sequence>
+    <sequence id="766" name="Account Created" positionX="800" positionY="5">
+      <transitions>
+        <transition id="2777" name="" condition="true" type="Normal" sourceSequence="766" targetSequence="1145" fromConnector="c7" toConnector="c2" />
+      </transitions>
+      <action id="765" type="Web.Browser.WaitForAttribute" ctrlIdRef="successAccountCreated" selector="&quot;section#form &gt; div.container &gt; div.row &gt; div.col-sm-9.col-sm-offset-1 &gt; h2.title.text-center &gt; b&quot;" url="&quot;automationexercise.com/account_created&quot;" timeout="10000" _attrName="" _attrValue="" displayName="Wait For Confirmation" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+      <action id="775" type="Logging.ConsoleWrite" output="&quot;Element successfully located&quot;" displayName="Write in console confirmation" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+      <action id="1135" type="Web.Browser.ClickElement" ctrlIdRef="continueButtonAfterRegister" selector="&quot;.btn.btn-primary&quot;" url="&quot;automationexercise.com/account_created&quot;" displayName="Click Continue After Register" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+    </sequence>
+    <invoke id="1145" name="Invoke Workflow" invokeWorkflow="&quot;Delogare Si Logare.tapflow&quot;" positionX="796" positionY="213">
+      <transitions />
+      <arguments />
+    </invoke>
+  </actions>
+</RobotDefinition>

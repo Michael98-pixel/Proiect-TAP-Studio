@@ -1,0 +1,120 @@
+<RobotDefinition robotId="2765" robotName="CautareaUnuiProdusSiAdaugareaSaInCos" editPoint="587,367" editZoom="1">
+  <controlIdentifiers>
+    <ctrlID name="[None]">
+      <window proc="" cls="" caption="" framework="win32" />
+    </ctrlID>
+    <ctrlID name="clickProducts">
+      <window framework="chrome" caption="automationexercise.com/view_cart" />
+      <web controlType="header" id="header" />
+      <web cls="header-middle" controlType="div" />
+      <web cls="container" controlType="div" />
+      <web cls="row" controlType="div" />
+      <web cls="col-sm-8" controlType="div" />
+      <web cls="shop-menu.pull-right" controlType="div" />
+      <web cls="nav.navbar-nav" controlType="ul" />
+      <web controlType="li" />
+      <web controlType="a" href="/products" />
+    </ctrlID>
+    <ctrlID name="searchInput">
+      <window framework="chrome" caption="automationexercise.com/products" />
+      <web cls="form-control.input-lg" controlType="input" id="search_product" />
+    </ctrlID>
+    <ctrlID name="searchButton">
+      <window framework="chrome" caption="automationexercise.com/products" />
+      <web cls="btn.btn-default.btn-lg" controlType="button" id="submit_search" />
+      <web cls="fa.fa-search" controlType="i" />
+    </ctrlID>
+    <ctrlID name="itemSearched">
+      <window framework="chrome" caption="automationexercise.com/products" />
+      <web controlType="html" />
+      <web controlType="body" />
+      <web controlType="section" />
+      <web cls="container" controlType="div" />
+      <web cls="row" controlType="div" />
+      <web cls="col-sm-9.padding-right" controlType="div" />
+      <web cls="features_items" controlType="div" />
+      <web cls="col-sm-4" controlType="div" />
+      <web cls="product-image-wrapper" controlType="div" />
+      <web cls="single-products" controlType="div" />
+      <web cls="productinfo.text-center" controlType="div" />
+      <web controlType="p" />
+    </ctrlID>
+    <ctrlID name="addToCartSearchedElement">
+      <window framework="chrome" caption="automationexercise.com/products" />
+      <web controlType="html" />
+      <web controlType="body" />
+      <web controlType="section" />
+      <web cls="container" controlType="div" />
+      <web cls="row" controlType="div" />
+      <web cls="col-sm-9.padding-right" controlType="div" />
+      <web cls="features_items" controlType="div" />
+      <web cls="col-sm-4" controlType="div" />
+      <web cls="product-image-wrapper" controlType="div" />
+      <web cls="single-products" controlType="div" />
+      <web cls="productinfo.text-center" controlType="div" />
+      <web cls="btn.btn-default.add-to-cart" controlType="a" />
+    </ctrlID>
+    <ctrlID name="viewCartButton">
+      <window framework="chrome" caption="automationexercise.com/products" />
+      <web cls="modal.show" controlType="div" id="cartModal" />
+      <web cls="modal-dialog.modal-confirm" controlType="div" />
+      <web cls="modal-content" controlType="div" />
+      <web cls="modal-body" controlType="div" />
+      <web cls="text-center" controlType="p" />
+      <web controlType="a" href="/view_cart" />
+      <web controlType="u" />
+    </ctrlID>
+    <ctrlID name="confirmSearchedProductInCart">
+      <window framework="chrome" caption="automationexercise.com/view_cart" />
+      <web controlType="tr" controlIndex="2" id="product-6" />
+      <web cls="cart_description" controlType="td" controlIndex="2" />
+      <web controlType="h4" />
+      <web controlType="a" href="/product_details/6" />
+    </ctrlID>
+    <ctrlID name="removeFromCartButton">
+      <window framework="chrome" caption="automationexercise.com/view_cart" />
+      <web controlType="tr" controlIndex="-1" id="product-1" />
+      <web cls="cart_delete" controlType="td" controlIndex="6" />
+      <web cls="cart_quantity_delete" controlType="a" />
+      <web cls="fa.fa-times" controlType="i" />
+    </ctrlID>
+    <ctrlID name="removedElement">
+      <window framework="chrome" caption="automationexercise.com/view_cart" />
+      <web controlType="tr" controlIndex="2" id="product-1" />
+      <web cls="cart_description" controlType="td" controlIndex="2" />
+      <web controlType="h4" />
+      <web controlType="a" href="/product_details/1" />
+    </ctrlID>
+  </controlIdentifiers>
+  <variables>
+    <variable name="variable1" type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="&quot;Summer White Top&quot;" />
+  </variables>
+  <arguments />
+  <actions>
+    <sequence id="1581" name="Cautarea unui produs si adaugarea in cos" positionX="50" positionY="200" startNodePosition="50,25" fromConnector="c7" toConnector="c2" startPath="">
+      <transitions>
+        <transition id="2766" name="" condition="true" type="Normal" sourceSequence="1581" targetSequence="1704" fromConnector="c5" toConnector="c4" />
+      </transitions>
+      <action id="1583" type="Web.Browser.ClickElement" ctrlIdRef="clickProducts" selector="&quot;body &gt; header:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; ul:nth-child(1) &gt; li:nth-child(2) &gt; a:nth-child(1)&quot;" url="&quot;automationexercise.com/view_cart&quot;" displayName="Click Products" waitBefore="150" waitAfter="3000" abortOnError="True" retryTimes="0" />
+      <action id="1585" type="Web.Browser.SetElementText" ctrlIdRef="searchInput" selector="&quot;#search_product&quot;" url="&quot;automationexercise.com/products&quot;" value="&quot;Summer White Top&quot;" displayName="Set Search text" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+      <action id="1584" type="Web.Browser.ClickElement" ctrlIdRef="searchButton" selector="&quot;.fa.fa-search&quot;" url="&quot;automationexercise.com/products&quot;" displayName="Click Search" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+      <action id="1586" type="Web.Browser.WaitForAttribute" ctrlIdRef="itemSearched" selector="&quot;div[class='productinfo text-center'] p&quot;" url="&quot;automationexercise.com/products&quot;" timeout="10000" _attrName="" _attrValue="" displayName="Wait For searched element to locate" waitBefore="150" waitAfter="1000" abortOnError="True" retryTimes="0" />
+      <action id="1601" type="Web.Browser.ClickElement" ctrlIdRef="addToCartSearchedElement" selector="&quot;div[class='productinfo text-center'] a[class='btn btn-default add-to-cart']&quot;" url="&quot;automationexercise.com/products&quot;" displayName="Click Add to Cart" waitBefore="150" waitAfter="1000" abortOnError="True" retryTimes="0" />
+      <action id="1630" type="Web.Browser.ClickElement" ctrlIdRef="viewCartButton" selector="&quot;body &gt; section:nth-child(3) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; p:nth-child(2) &gt; a:nth-child(1) &gt; u:nth-child(1)&quot;" url="&quot;automationexercise.com/products&quot;" displayName="Click view Cart" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+      <action id="1646" type="Web.Browser.WaitForAttribute" ctrlIdRef="confirmSearchedProductInCart" selector="&quot;tr#product-6 &gt; td.cart_description:nth-child(2) &gt; h4 &gt; a[href=\&quot;\\/product_details\\/6\&quot;]&quot;" url="&quot;automationexercise.com/view_cart&quot;" timeout="10000" _attrName="" _attrValue="" displayName="Wait For Element to be visible in cart" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+      <action id="1647" type="Logging.ConsoleWrite" output="&quot;Element: &quot;+ variable1 +&quot; is in cart&quot;" displayName="Write To Console" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+    </sequence>
+    <sequence id="1704" name="Eliminarea unui produs din cos" positionX="459" positionY="303">
+      <transitions>
+        <transition id="2767" name="" condition="true" type="Normal" sourceSequence="1704" targetSequence="1770" fromConnector="c5" toConnector="c4" />
+      </transitions>
+      <action id="1705" type="Web.Browser.ClickElement" ctrlIdRef="removeFromCartButton" selector="&quot;tr[id='product-1'] i[class='fa fa-times']&quot;" url="&quot;automationexercise.com/view_cart&quot;" displayName="Click Remove from Cart" waitBefore="150" waitAfter="2000" abortOnError="True" retryTimes="0" />
+      <action id="1721" type="Web.Browser.WaitForAttribute" ctrlIdRef="removedElement" selector="&quot;a[href='/product_details/1']&quot;" url="&quot;automationexercise.com/view_cart&quot;" timeout="4000" _attrName="" _attrValue="" displayName="Check if removed element is present" waitBefore="150" waitAfter="150" abortOnError="False" retryTimes="0" />
+      <action id="1722" type="Logging.ConsoleWrite" output="&quot;Se astepta o eroare, daca aceasta este inseamna ca testul a reusit si productul sters nu mai este in cos.&quot;" displayName="Element not found" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+    </sequence>
+    <invoke id="1770" name="Invoke Workflow" invokeWorkflow="&quot;Plasarea unei comenzi.tapflow&quot;" positionX="799" positionY="296">
+      <transitions />
+      <arguments />
+    </invoke>
+  </actions>
+</RobotDefinition>

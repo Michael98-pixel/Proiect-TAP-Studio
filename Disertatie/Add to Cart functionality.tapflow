@@ -1,0 +1,91 @@
+<RobotDefinition robotId="2762" robotName="Add to Cart functionality" editPoint="587,367" editZoom="1">
+  <controlIdentifiers>
+    <ctrlID name="[None]">
+      <window proc="" cls="" caption="" framework="win32" />
+    </ctrlID>
+    <ctrlID name="NewControl5">
+      <window proc="chrome.exe" cls="Chrome_WidgetWin_1" caption="Automation Exercise - Google Chrome - Mihai" framework="win32" />
+      <ctrl controlType="ControlType.Pane" />
+      <ctrl controlType="ControlType.ToolBar" />
+      <ctrl controlType="ControlType.Edit" text="Address and search bar" />
+    </ctrlID>
+    <ctrlID name="NewControl1">
+      <window framework="chrome" caption="automationexercise.com/test_cases" />
+      <web controlType="header" id="header" />
+      <web cls="header-middle" controlType="div" />
+      <web cls="container" controlType="div" />
+      <web cls="row" controlType="div" />
+      <web cls="col-sm-4" controlType="div" />
+      <web cls="logo.pull-left" controlType="div" />
+      <web controlType="a" href="/" />
+      <web controlType="img" />
+    </ctrlID>
+    <ctrlID name="addToCart1Product">
+      <window framework="chrome" caption="automationexercise.com" />
+      <web controlType="html" />
+      <web controlType="body" />
+      <web controlType="section" />
+      <web cls="container" controlType="div" />
+      <web cls="row" controlType="div" />
+      <web cls="col-sm-9.padding-right" controlType="div" />
+      <web cls="features_items" controlType="div" />
+      <web cls="col-sm-4" controlType="div" />
+      <web cls="product-image-wrapper" controlType="div" />
+      <web cls="single-products" controlType="div" />
+      <web cls="product-overlay" controlType="div" />
+      <web cls="overlay-content" controlType="div" />
+      <web cls="btn.btn-default.add-to-cart" controlType="a" />
+    </ctrlID>
+    <ctrlID name="itemAddedConfirmation">
+      <window framework="chrome" caption="automationexercise.com" />
+      <web cls="modal.show" controlType="div" id="cartModal" />
+      <web cls="modal-dialog.modal-confirm" controlType="div" />
+      <web cls="modal-content" controlType="div" />
+      <web cls="modal-header" controlType="div" />
+      <web cls="modal-title.w-100" controlType="h4" />
+    </ctrlID>
+    <ctrlID name="viewCartButton">
+      <window framework="chrome" caption="automationexercise.com" />
+      <web cls="modal.show" controlType="div" id="cartModal" />
+      <web cls="modal-dialog.modal-confirm" controlType="div" />
+      <web cls="modal-content" controlType="div" />
+      <web cls="modal-body" controlType="div" />
+      <web cls="text-center" controlType="p" />
+      <web controlType="a" href="/view_cart" />
+      <web controlType="u" />
+    </ctrlID>
+    <ctrlID name="blueTop">
+      <window framework="chrome" caption="automationexercise.com/view_cart" />
+      <web controlType="tr" controlIndex="-1" id="product-1" />
+      <web cls="cart_description" controlType="td" controlIndex="2" />
+      <web controlType="h4" />
+      <web controlType="a" href="/product_details/1" />
+    </ctrlID>
+  </controlIdentifiers>
+  <variables>
+    <variable name="elementAdded" type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="Blue Top" />
+    <variable name="productList" type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="All products list" />
+  </variables>
+  <arguments />
+  <actions>
+    <sequence id="1" name="Adding to Cart from home page" positionX="50" positionY="200" startNodePosition="53,0" fromConnector="c7" toConnector="c2" startPath="">
+      <transitions>
+        <transition id="2763" name="" condition="true" type="Normal" sourceSequence="1" targetSequence="77" fromConnector="c5" toConnector="c4" />
+      </transitions>
+      <action id="62" type="Web.Browser.ClickElement" ctrlIdRef="addToCart1Product" selector="&quot;body &gt; section:nth-child(3) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(3) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; a:nth-child(3)&quot;" url="&quot;automationexercise.com&quot;" displayName="Click AddToCart" waitBefore="2000" waitAfter="2000" abortOnError="True" retryTimes="3" />
+      <action id="1481" type="Web.Browser.WaitForAttribute" ctrlIdRef="itemAddedConfirmation" selector="&quot;.modal-title.w-100&quot;" url="&quot;automationexercise.com&quot;" timeout="10000" _attrName="" _attrValue="" displayName="ItemAddedSuccess " waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+    </sequence>
+    <sequence id="77" name="Open Cart" positionX="429" positionY="221">
+      <transitions>
+        <transition id="2764" name="" condition="true" type="Normal" sourceSequence="77" targetSequence="1580" fromConnector="c5" toConnector="c4" />
+      </transitions>
+      <action id="86" type="Web.Browser.ClickElement" ctrlIdRef="viewCartButton" selector="&quot;body &gt; section:nth-child(3) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; p:nth-child(2) &gt; a:nth-child(1) &gt; u:nth-child(1)&quot;" url="&quot;automationexercise.com&quot;" displayName="Click ViewCart Button" waitBefore="1000" waitAfter="150" abortOnError="True" retryTimes="3" />
+      <action id="1543" type="Web.Browser.WaitForAttribute" ctrlIdRef="blueTop" selector="&quot;a[href='/product_details/1']&quot;" url="&quot;automationexercise.com/view_cart&quot;" timeout="10000" _attrName="" _attrValue="" displayName="Wait For Element Attribute" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+      <action id="87" type="Logging.ConsoleWrite" output="&quot;Selected Item added to cart successfully&quot;" displayName="Write To Console" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+    </sequence>
+    <invoke id="1580" name="Invoke Workflow" invokeWorkflow="&quot;CautareaUnuiProdusSiAdaugareaSaInCos.tapflow&quot;" positionX="790" positionY="210">
+      <transitions />
+      <arguments />
+    </invoke>
+  </actions>
+</RobotDefinition>

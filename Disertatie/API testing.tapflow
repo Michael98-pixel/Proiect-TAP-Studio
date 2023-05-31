@@ -1,0 +1,45 @@
+<RobotDefinition robotId="2758" robotName="API testing" editPoint="598,298" editZoom="1">
+  <controlIdentifiers />
+  <variables>
+    <variable name="code" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="" />
+    <variable name="productList" type="Newtonsoft.Json.Linq.JObject, Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed" value="" />
+    <variable name="outputREST" type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="" />
+  </variables>
+  <arguments />
+  <actions>
+    <sequence id="117" name="Get All Products List" positionX="10" positionY="170" startNodePosition="50,25" fromConnector="c8" toConnector="c4" startPath="">
+      <transitions>
+        <transition id="2759" name="" condition="true" type="Normal" sourceSequence="117" targetSequence="165" fromConnector="c5" toConnector="c4" />
+      </transitions>
+      <action id="115" type="Web.HTTPRequest" url="&quot;https://automationexercise.com/api/productsList&quot;" method="GET" timeout="10000" headers="" body="" parameters="" simpleAuthUsername="" simpleAuthPassword="" output="outputREST" responseCode="code" saveSessionData="True" displayName="HTTP REST Request" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+      <action id="140" type="Data.JSON.Deserialize" content="outputREST" output="productList" displayName="Deserialize" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+      <action id="133" type="Logging.ConsoleWrite" output="&quot;Expected response code is 200. Actual is &quot; + productList[&quot;products&quot;]" displayName="Write To Console" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+    </sequence>
+    <sequence id="878" name="POST To Search Product" positionX="240" positionY="605">
+      <transitions />
+      <action id="879" type="Web.HTTPRequest" url="&quot;https://automationexercise.com/api/searchProduct&quot;" method="POST" timeout="10000" headers="" body="" parameters="[{&quot;Name&quot;:&quot;search_product&quot;,&quot;Value&quot;:&quot;'jean'&quot;,&quot;Type&quot;:&quot;&quot;}]" simpleAuthUsername="" simpleAuthPassword="" output="listProduct" responseCode="code" saveSessionData="True" displayName="HTTP REST Request" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+      <action id="880" type="Data.JSON.Deserialize" content="listProduct" output="productList" displayName="Deserialize" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+      <action id="881" type="Logging.ConsoleWrite" output="&quot;Expected response code is 200. Actual is &quot; + listProduct" displayName="Write To Console" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+    </sequence>
+    <sequence id="165" name="POST To All Products List" positionX="320" positionY="171">
+      <transitions>
+        <transition id="2760" name="" condition="true" type="Normal" sourceSequence="165" targetSequence="856" fromConnector="c5" toConnector="c4" />
+      </transitions>
+      <action id="166" type="Web.HTTPRequest" url="&quot;https://automationexercise.com/api/productsList&quot;" method="POST" timeout="10000" headers="" body="" parameters="" simpleAuthUsername="" simpleAuthPassword="" output="outputREST" responseCode="code" saveSessionData="True" displayName="HTTP REST Request" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+      <action id="167" type="Data.JSON.Deserialize" content="outputREST" output="productList" displayName="Deserialize" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+      <action id="168" type="Logging.ConsoleWrite" output="&quot;Expected response code is 405. Actual is &quot; + listProduct" displayName="Write To Console" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+    </sequence>
+    <sequence id="856" name="Get All Brands List" positionX="634" positionY="171">
+      <transitions>
+        <transition id="2761" name="" condition="true" type="Normal" sourceSequence="856" targetSequence="2098" fromConnector="c5" toConnector="c5" />
+      </transitions>
+      <action id="857" type="Web.HTTPRequest" url="&quot;https://automationexercise.com/api/brandsList&quot;" method="GET" timeout="10000" headers="" body="" parameters="" simpleAuthUsername="" simpleAuthPassword="" output="outputREST" responseCode="code" saveSessionData="True" displayName="HTTP REST Request" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+      <action id="858" type="Data.JSON.Deserialize" content="outputREST" output="productList" displayName="Deserialize" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+      <action id="859" type="Logging.ConsoleWrite" output="&quot;Expected response code is 200. Actual is &quot; + listProduct" displayName="Write To Console" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+    </sequence>
+    <invoke id="2098" name="Invoke Workflow" invokeWorkflow="&quot;Registration.tapflow&quot;" positionX="793" positionY="352">
+      <transitions />
+      <arguments />
+    </invoke>
+  </actions>
+</RobotDefinition>

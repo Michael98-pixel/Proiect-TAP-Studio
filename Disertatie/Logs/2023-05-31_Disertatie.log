@@ -1,0 +1,261 @@
+2023-05-31 07:45:39,873 [1] INFO Tap.RobotLauncher.Dashboard - Starting robot on process 14252
+2023-05-31 07:45:39,880 [1] INFO Tap.RobotLauncher.Dashboard - 	Sequence started -> Get All Products List...
+2023-05-31 07:45:39,896 [1] INFO Tap.RobotLauncher.Dashboard - Started action: HTTP REST Request
+2023-05-31 07:45:42,266 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: HTTP REST Request [2364 ms]
+2023-05-31 07:45:42,266 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Deserialize
+2023-05-31 07:45:42,784 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Deserialize [515 ms]
+2023-05-31 07:45:42,784 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Write To Console
+2023-05-31 07:45:43,208 [1] INFO Tap.RobotLauncher.Dashboard - Expected response code is 200. Actual is {"responseCode": 200, "products": [{"id": 1, "name": "Blue Top", "price": "Rs. 500", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 2, "name": "Men Tshirt", "price": "Rs. 400", "brand": "H&M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 3, "name": "Sleeveless Dress", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 4, "name": "Stylish Dress", "price": "Rs. 1500", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 5, "name": "Winter Top", "price": "Rs. 600", "brand": "Mast & Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 6, "name": "Summer White Top", "price": "Rs. 400", "brand": "H&M", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 7, "name": "Madame Top For Women", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 8, "name": "Fancy Green Top", "price": "Rs. 700", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 11, "name": "Sleeves Printed Top - White", "price": "Rs. 499", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 12, "name": "Half Sleeves Top Schiffli Detailing - Pink", "price": "Rs. 359", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 13, "name": "Frozen Tops For Kids", "price": "Rs. 278", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 14, "name": "Full Sleeves Top Cherry - Pink", "price": "Rs. 679", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 15, "name": "Printed Off Shoulder Top - White", "price": "Rs. 315", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 16, "name": "Sleeves Top and Short - Blue & Pink", "price": "Rs. 478", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 18, "name": "Little Girls Mr. Panda Shirt", "price": "Rs. 1200", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 19, "name": "Sleeveless Unicorn Patch Gown - Pink", "price": "Rs. 1050", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 20, "name": "Cotton Mull Embroidered Dress", "price": "Rs. 1190", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 21, "name": "Blue Cotton Indie Mickey Dress", "price": "Rs. 1530", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 22, "name": "Long Maxi Tulle Fancy Dress Up Outfits -Pink", "price": "Rs. 1600", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 23, "name": "Sleeveless Unicorn Print Fit & Flare Net Dress - Multi", "price": "Rs. 1100", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 24, "name": "Colour Blocked Shirt \u2013 Sky Blue", "price": "Rs. 849", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 28, "name": "Pure Cotton V-Neck T-Shirt", "price": "Rs. 1299", "brand": "H&M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 29, "name": "Green Side Placket Detail T-Shirt", "price": "Rs. 1000", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 30, "name": "Premium Polo T-Shirts", "price": "Rs. 1500", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 31, "name": "Pure Cotton Neon Green Tshirt", "price": "Rs. 850", "brand": "H&M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 33, "name": "Soft Stretch Jeans", "price": "Rs. 799", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 35, "name": "Regular Fit Straight Jeans", "price": "Rs. 1200", "brand": "H&M", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 37, "name": "Grunt Blue Slim Fit Jeans", "price": "Rs. 1400", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 38, "name": "Rose Pink Embroidered Maxi Dress", "price": "Rs. 2300", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 39, "name": "Cotton Silk Hand Block Print Saree", "price": "Rs. 3000", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 40, "name": "Rust Red Linen Saree", "price": "Rs. 3500", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 41, "name": "Beautiful Peacock Blue Cotton Linen Saree", "price": "Rs. 5000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 42, "name": "Lace Top For Women", "price": "Rs. 1400", "brand": "Mast & Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 43, "name": "GRAPHIC DESIGN MEN T SHIRT - BLUE", "price": "Rs. 1389", "brand": "Mast & Harbour", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}]}
+2023-05-31 07:45:43,382 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Write To Console [587 ms]
+2023-05-31 07:45:43,382 [1] INFO Tap.RobotLauncher.Dashboard - Sequence finished -> Get All Products List...
+2023-05-31 07:45:43,382 [1] INFO Tap.RobotLauncher.Dashboard - 	Sequence started -> POST To All Products List...
+2023-05-31 07:45:43,382 [1] INFO Tap.RobotLauncher.Dashboard - Started action: HTTP REST Request
+2023-05-31 07:45:44,558 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: HTTP REST Request [1164 ms]
+2023-05-31 07:45:44,558 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Deserialize
+2023-05-31 07:45:44,998 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Deserialize [436 ms]
+2023-05-31 07:45:44,998 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Write To Console
+2023-05-31 07:45:45,328 [1] INFO Tap.RobotLauncher.Dashboard - Expected response code is 405. Actual is {"responseCode": 405, "message": "This request method is not supported."}
+2023-05-31 07:45:45,500 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Write To Console [495 ms]
+2023-05-31 07:45:45,500 [1] INFO Tap.RobotLauncher.Dashboard - Sequence finished -> POST To All Products List...
+2023-05-31 07:45:45,500 [1] INFO Tap.RobotLauncher.Dashboard - 	Sequence started -> Get All Brands List...
+2023-05-31 07:45:45,500 [1] INFO Tap.RobotLauncher.Dashboard - Started action: HTTP REST Request
+2023-05-31 07:45:46,567 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: HTTP REST Request [1060 ms]
+2023-05-31 07:45:46,567 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Deserialize
+2023-05-31 07:45:46,992 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Deserialize [420 ms]
+2023-05-31 07:45:46,992 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Write To Console
+2023-05-31 07:45:47,293 [1] INFO Tap.RobotLauncher.Dashboard - Expected response code is 200. Actual is {"responseCode": 200, "brands": [{"id": 1, "brand": "Polo"}, {"id": 2, "brand": "H&M"}, {"id": 3, "brand": "Madame"}, {"id": 4, "brand": "Madame"}, {"id": 5, "brand": "Mast & Harbour"}, {"id": 6, "brand": "H&M"}, {"id": 7, "brand": "Madame"}, {"id": 8, "brand": "Polo"}, {"id": 11, "brand": "Babyhug"}, {"id": 12, "brand": "Babyhug"}, {"id": 13, "brand": "Allen Solly Junior"}, {"id": 14, "brand": "Kookie Kids"}, {"id": 15, "brand": "Babyhug"}, {"id": 16, "brand": "Babyhug"}, {"id": 18, "brand": "Kookie Kids"}, {"id": 19, "brand": "Allen Solly Junior"}, {"id": 20, "brand": "Kookie Kids"}, {"id": 21, "brand": "Biba"}, {"id": 22, "brand": "Biba"}, {"id": 23, "brand": "Biba"}, {"id": 24, "brand": "Allen Solly Junior"}, {"id": 28, "brand": "H&M"}, {"id": 29, "brand": "Polo"}, {"id": 30, "brand": "Polo"}, {"id": 31, "brand": "H&M"}, {"id": 33, "brand": "Polo"}, {"id": 35, "brand": "H&M"}, {"id": 37, "brand": "Polo"}, {"id": 38, "brand": "Madame"}, {"id": 39, "brand": "Biba"}, {"id": 40, "brand": "Biba"}, {"id": 41, "brand": "Madame"}, {"id": 42, "brand": "Mast & Harbour"}, {"id": 43, "brand": "Mast & Harbour"}]}
+2023-05-31 07:45:47,462 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Write To Console [468 ms]
+2023-05-31 07:45:47,462 [1] INFO Tap.RobotLauncher.Dashboard - Sequence finished -> Get All Brands List...
+2023-05-31 07:45:47,462 [1] INFO Tap.RobotLauncher.Dashboard - 	Sequence started -> Invoke Workflow...
+2023-05-31 07:45:47,980 [1] INFO Tap.RobotLauncher.Dashboard - Starting robot on process 14252
+2023-05-31 07:45:47,980 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Open Browser [INVOKED]
+2023-05-31 07:45:50,357 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Open Browser [2364 ms] [INVOKED]
+2023-05-31 07:45:50,357 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Click SignUp/Login [INVOKED]
+2023-05-31 07:45:52,926 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Click SignUp/Login [2568 ms] [INVOKED]
+2023-05-31 07:45:52,926 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Set Name [INVOKED]
+2023-05-31 07:45:59,415 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Set Name [6485 ms] [INVOKED]
+2023-05-31 07:45:59,415 [1] INFO Tap.RobotLauncher.Dashboard - Error for action [Web.Browser.SetElementText] id=Set Name [INVOKED]
+2023-05-31 07:45:59,422 [1] INFO Tap.RobotLauncher.Dashboard - Sequence aborted: Invoke Workflow - Reason: Invoke Block failed (Registration.tapflow)
+2023-05-31 07:45:59,431 [1] INFO Tap.RobotLauncher.Dashboard - Finished robot on process 14252
+2023-05-31 07:46:45,029 [1] INFO Tap.RobotLauncher.Dashboard - Starting robot on process 11188
+2023-05-31 07:46:45,045 [1] INFO Tap.RobotLauncher.Dashboard - 	Sequence started -> Get All Products List...
+2023-05-31 07:46:45,045 [1] INFO Tap.RobotLauncher.Dashboard - Started action: HTTP REST Request
+2023-05-31 07:46:47,892 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: HTTP REST Request [2836 ms]
+2023-05-31 07:46:47,892 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Deserialize
+2023-05-31 07:46:48,381 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Deserialize [487 ms]
+2023-05-31 07:46:48,381 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Write To Console
+2023-05-31 07:46:48,852 [1] INFO Tap.RobotLauncher.Dashboard - Expected response code is 200. Actual is {"responseCode": 200, "products": [{"id": 1, "name": "Blue Top", "price": "Rs. 500", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 2, "name": "Men Tshirt", "price": "Rs. 400", "brand": "H&M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 3, "name": "Sleeveless Dress", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 4, "name": "Stylish Dress", "price": "Rs. 1500", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 5, "name": "Winter Top", "price": "Rs. 600", "brand": "Mast & Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 6, "name": "Summer White Top", "price": "Rs. 400", "brand": "H&M", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 7, "name": "Madame Top For Women", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 8, "name": "Fancy Green Top", "price": "Rs. 700", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 11, "name": "Sleeves Printed Top - White", "price": "Rs. 499", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 12, "name": "Half Sleeves Top Schiffli Detailing - Pink", "price": "Rs. 359", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 13, "name": "Frozen Tops For Kids", "price": "Rs. 278", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 14, "name": "Full Sleeves Top Cherry - Pink", "price": "Rs. 679", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 15, "name": "Printed Off Shoulder Top - White", "price": "Rs. 315", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 16, "name": "Sleeves Top and Short - Blue & Pink", "price": "Rs. 478", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 18, "name": "Little Girls Mr. Panda Shirt", "price": "Rs. 1200", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 19, "name": "Sleeveless Unicorn Patch Gown - Pink", "price": "Rs. 1050", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 20, "name": "Cotton Mull Embroidered Dress", "price": "Rs. 1190", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 21, "name": "Blue Cotton Indie Mickey Dress", "price": "Rs. 1530", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 22, "name": "Long Maxi Tulle Fancy Dress Up Outfits -Pink", "price": "Rs. 1600", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 23, "name": "Sleeveless Unicorn Print Fit & Flare Net Dress - Multi", "price": "Rs. 1100", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 24, "name": "Colour Blocked Shirt \u2013 Sky Blue", "price": "Rs. 849", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 28, "name": "Pure Cotton V-Neck T-Shirt", "price": "Rs. 1299", "brand": "H&M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 29, "name": "Green Side Placket Detail T-Shirt", "price": "Rs. 1000", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 30, "name": "Premium Polo T-Shirts", "price": "Rs. 1500", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 31, "name": "Pure Cotton Neon Green Tshirt", "price": "Rs. 850", "brand": "H&M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 33, "name": "Soft Stretch Jeans", "price": "Rs. 799", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 35, "name": "Regular Fit Straight Jeans", "price": "Rs. 1200", "brand": "H&M", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 37, "name": "Grunt Blue Slim Fit Jeans", "price": "Rs. 1400", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 38, "name": "Rose Pink Embroidered Maxi Dress", "price": "Rs. 2300", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 39, "name": "Cotton Silk Hand Block Print Saree", "price": "Rs. 3000", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 40, "name": "Rust Red Linen Saree", "price": "Rs. 3500", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 41, "name": "Beautiful Peacock Blue Cotton Linen Saree", "price": "Rs. 5000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 42, "name": "Lace Top For Women", "price": "Rs. 1400", "brand": "Mast & Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 43, "name": "GRAPHIC DESIGN MEN T SHIRT - BLUE", "price": "Rs. 1389", "brand": "Mast & Harbour", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}]}
+2023-05-31 07:46:49,026 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Write To Console [641 ms]
+2023-05-31 07:46:49,026 [1] INFO Tap.RobotLauncher.Dashboard - Sequence finished -> Get All Products List...
+2023-05-31 07:46:49,026 [1] INFO Tap.RobotLauncher.Dashboard - 	Sequence started -> POST To All Products List...
+2023-05-31 07:46:49,026 [1] INFO Tap.RobotLauncher.Dashboard - Started action: HTTP REST Request
+2023-05-31 07:46:50,799 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: HTTP REST Request [1762 ms]
+2023-05-31 07:46:50,799 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Deserialize
+2023-05-31 07:46:51,301 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Deserialize [499 ms]
+2023-05-31 07:46:51,301 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Write To Console
+2023-05-31 07:46:51,662 [1] INFO Tap.RobotLauncher.Dashboard - Expected response code is 405. Actual is {"responseCode": 405, "message": "This request method is not supported."}
+2023-05-31 07:46:51,835 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Write To Console [530 ms]
+2023-05-31 07:46:51,835 [1] INFO Tap.RobotLauncher.Dashboard - Sequence finished -> POST To All Products List...
+2023-05-31 07:46:51,835 [1] INFO Tap.RobotLauncher.Dashboard - 	Sequence started -> Get All Brands List...
+2023-05-31 07:46:51,835 [1] INFO Tap.RobotLauncher.Dashboard - Started action: HTTP REST Request
+2023-05-31 07:46:53,799 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: HTTP REST Request [1954 ms]
+2023-05-31 07:46:53,799 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Deserialize
+2023-05-31 07:46:54,328 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Deserialize [527 ms]
+2023-05-31 07:46:54,328 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Write To Console
+2023-05-31 07:46:54,659 [1] INFO Tap.RobotLauncher.Dashboard - Expected response code is 200. Actual is {"responseCode": 200, "brands": [{"id": 1, "brand": "Polo"}, {"id": 2, "brand": "H&M"}, {"id": 3, "brand": "Madame"}, {"id": 4, "brand": "Madame"}, {"id": 5, "brand": "Mast & Harbour"}, {"id": 6, "brand": "H&M"}, {"id": 7, "brand": "Madame"}, {"id": 8, "brand": "Polo"}, {"id": 11, "brand": "Babyhug"}, {"id": 12, "brand": "Babyhug"}, {"id": 13, "brand": "Allen Solly Junior"}, {"id": 14, "brand": "Kookie Kids"}, {"id": 15, "brand": "Babyhug"}, {"id": 16, "brand": "Babyhug"}, {"id": 18, "brand": "Kookie Kids"}, {"id": 19, "brand": "Allen Solly Junior"}, {"id": 20, "brand": "Kookie Kids"}, {"id": 21, "brand": "Biba"}, {"id": 22, "brand": "Biba"}, {"id": 23, "brand": "Biba"}, {"id": 24, "brand": "Allen Solly Junior"}, {"id": 28, "brand": "H&M"}, {"id": 29, "brand": "Polo"}, {"id": 30, "brand": "Polo"}, {"id": 31, "brand": "H&M"}, {"id": 33, "brand": "Polo"}, {"id": 35, "brand": "H&M"}, {"id": 37, "brand": "Polo"}, {"id": 38, "brand": "Madame"}, {"id": 39, "brand": "Biba"}, {"id": 40, "brand": "Biba"}, {"id": 41, "brand": "Madame"}, {"id": 42, "brand": "Mast & Harbour"}, {"id": 43, "brand": "Mast & Harbour"}]}
+2023-05-31 07:46:54,831 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Write To Console [502 ms]
+2023-05-31 07:46:54,831 [1] INFO Tap.RobotLauncher.Dashboard - Sequence finished -> Get All Brands List...
+2023-05-31 07:46:54,831 [1] INFO Tap.RobotLauncher.Dashboard - 	Sequence started -> Invoke Workflow...
+2023-05-31 07:46:55,161 [1] INFO Tap.RobotLauncher.Dashboard - Starting robot on process 11188
+2023-05-31 07:46:55,161 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Open Browser [INVOKED]
+2023-05-31 07:46:57,595 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Open Browser [2424 ms] [INVOKED]
+2023-05-31 07:46:57,595 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Click SignUp/Login [INVOKED]
+2023-05-31 07:47:00,195 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Click SignUp/Login [2597 ms] [INVOKED]
+2023-05-31 07:47:00,195 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Set Name [INVOKED]
+2023-05-31 07:47:06,846 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Set Name [6648 ms] [INVOKED]
+2023-05-31 07:47:06,846 [1] INFO Tap.RobotLauncher.Dashboard - Error for action [Web.Browser.SetElementText] id=Set Name [INVOKED]
+2023-05-31 07:47:06,846 [1] INFO Tap.RobotLauncher.Dashboard - Sequence aborted: Invoke Workflow - Reason: Invoke Block failed (Registration.tapflow)
+2023-05-31 07:47:06,846 [1] INFO Tap.RobotLauncher.Dashboard - Finished robot on process 11188
+2023-05-31 07:47:23,467 [1] INFO Tap.RobotLauncher.Dashboard - Starting robot on process 10504
+2023-05-31 07:47:23,482 [1] INFO Tap.RobotLauncher.Dashboard - 	Sequence started -> Get All Products List...
+2023-05-31 07:47:23,482 [1] INFO Tap.RobotLauncher.Dashboard - Started action: HTTP REST Request
+2023-05-31 07:47:25,616 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: HTTP REST Request [2127 ms]
+2023-05-31 07:47:25,616 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Deserialize
+2023-05-31 07:47:26,307 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Deserialize [688 ms]
+2023-05-31 07:47:26,307 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Write To Console
+2023-05-31 07:47:26,685 [1] INFO Tap.RobotLauncher.Dashboard - Expected response code is 200. Actual is {"responseCode": 200, "products": [{"id": 1, "name": "Blue Top", "price": "Rs. 500", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 2, "name": "Men Tshirt", "price": "Rs. 400", "brand": "H&M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 3, "name": "Sleeveless Dress", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 4, "name": "Stylish Dress", "price": "Rs. 1500", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 5, "name": "Winter Top", "price": "Rs. 600", "brand": "Mast & Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 6, "name": "Summer White Top", "price": "Rs. 400", "brand": "H&M", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 7, "name": "Madame Top For Women", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 8, "name": "Fancy Green Top", "price": "Rs. 700", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 11, "name": "Sleeves Printed Top - White", "price": "Rs. 499", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 12, "name": "Half Sleeves Top Schiffli Detailing - Pink", "price": "Rs. 359", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 13, "name": "Frozen Tops For Kids", "price": "Rs. 278", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 14, "name": "Full Sleeves Top Cherry - Pink", "price": "Rs. 679", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 15, "name": "Printed Off Shoulder Top - White", "price": "Rs. 315", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 16, "name": "Sleeves Top and Short - Blue & Pink", "price": "Rs. 478", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 18, "name": "Little Girls Mr. Panda Shirt", "price": "Rs. 1200", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 19, "name": "Sleeveless Unicorn Patch Gown - Pink", "price": "Rs. 1050", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 20, "name": "Cotton Mull Embroidered Dress", "price": "Rs. 1190", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 21, "name": "Blue Cotton Indie Mickey Dress", "price": "Rs. 1530", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 22, "name": "Long Maxi Tulle Fancy Dress Up Outfits -Pink", "price": "Rs. 1600", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 23, "name": "Sleeveless Unicorn Print Fit & Flare Net Dress - Multi", "price": "Rs. 1100", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 24, "name": "Colour Blocked Shirt \u2013 Sky Blue", "price": "Rs. 849", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops & Shirts"}}, {"id": 28, "name": "Pure Cotton V-Neck T-Shirt", "price": "Rs. 1299", "brand": "H&M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 29, "name": "Green Side Placket Detail T-Shirt", "price": "Rs. 1000", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 30, "name": "Premium Polo T-Shirts", "price": "Rs. 1500", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 31, "name": "Pure Cotton Neon Green Tshirt", "price": "Rs. 850", "brand": "H&M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 33, "name": "Soft Stretch Jeans", "price": "Rs. 799", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 35, "name": "Regular Fit Straight Jeans", "price": "Rs. 1200", "brand": "H&M", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 37, "name": "Grunt Blue Slim Fit Jeans", "price": "Rs. 1400", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 38, "name": "Rose Pink Embroidered Maxi Dress", "price": "Rs. 2300", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 39, "name": "Cotton Silk Hand Block Print Saree", "price": "Rs. 3000", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 40, "name": "Rust Red Linen Saree", "price": "Rs. 3500", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 41, "name": "Beautiful Peacock Blue Cotton Linen Saree", "price": "Rs. 5000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 42, "name": "Lace Top For Women", "price": "Rs. 1400", "brand": "Mast & Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 43, "name": "GRAPHIC DESIGN MEN T SHIRT - BLUE", "price": "Rs. 1389", "brand": "Mast & Harbour", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}]}
+2023-05-31 07:47:26,857 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Write To Console [547 ms]
+2023-05-31 07:47:26,857 [1] INFO Tap.RobotLauncher.Dashboard - Sequence finished -> Get All Products List...
+2023-05-31 07:47:26,857 [1] INFO Tap.RobotLauncher.Dashboard - 	Sequence started -> POST To All Products List...
+2023-05-31 07:47:26,857 [1] INFO Tap.RobotLauncher.Dashboard - Started action: HTTP REST Request
+2023-05-31 07:47:28,820 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: HTTP REST Request [1958 ms]
+2023-05-31 07:47:28,820 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Deserialize
+2023-05-31 07:47:29,339 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Deserialize [517 ms]
+2023-05-31 07:47:29,339 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Write To Console
+2023-05-31 07:47:29,699 [1] INFO Tap.RobotLauncher.Dashboard - Expected response code is 405. Actual is {"responseCode": 405, "message": "This request method is not supported."}
+2023-05-31 07:47:29,872 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Write To Console [531 ms]
+2023-05-31 07:47:29,872 [1] INFO Tap.RobotLauncher.Dashboard - Sequence finished -> POST To All Products List...
+2023-05-31 07:47:29,872 [1] INFO Tap.RobotLauncher.Dashboard - 	Sequence started -> Get All Brands List...
+2023-05-31 07:47:29,872 [1] INFO Tap.RobotLauncher.Dashboard - Started action: HTTP REST Request
+2023-05-31 07:47:31,943 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: HTTP REST Request [2065 ms]
+2023-05-31 07:47:31,943 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Deserialize
+2023-05-31 07:47:32,460 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Deserialize [515 ms]
+2023-05-31 07:47:32,460 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Write To Console
+2023-05-31 07:47:32,821 [1] INFO Tap.RobotLauncher.Dashboard - Expected response code is 200. Actual is {"responseCode": 200, "brands": [{"id": 1, "brand": "Polo"}, {"id": 2, "brand": "H&M"}, {"id": 3, "brand": "Madame"}, {"id": 4, "brand": "Madame"}, {"id": 5, "brand": "Mast & Harbour"}, {"id": 6, "brand": "H&M"}, {"id": 7, "brand": "Madame"}, {"id": 8, "brand": "Polo"}, {"id": 11, "brand": "Babyhug"}, {"id": 12, "brand": "Babyhug"}, {"id": 13, "brand": "Allen Solly Junior"}, {"id": 14, "brand": "Kookie Kids"}, {"id": 15, "brand": "Babyhug"}, {"id": 16, "brand": "Babyhug"}, {"id": 18, "brand": "Kookie Kids"}, {"id": 19, "brand": "Allen Solly Junior"}, {"id": 20, "brand": "Kookie Kids"}, {"id": 21, "brand": "Biba"}, {"id": 22, "brand": "Biba"}, {"id": 23, "brand": "Biba"}, {"id": 24, "brand": "Allen Solly Junior"}, {"id": 28, "brand": "H&M"}, {"id": 29, "brand": "Polo"}, {"id": 30, "brand": "Polo"}, {"id": 31, "brand": "H&M"}, {"id": 33, "brand": "Polo"}, {"id": 35, "brand": "H&M"}, {"id": 37, "brand": "Polo"}, {"id": 38, "brand": "Madame"}, {"id": 39, "brand": "Biba"}, {"id": 40, "brand": "Biba"}, {"id": 41, "brand": "Madame"}, {"id": 42, "brand": "Mast & Harbour"}, {"id": 43, "brand": "Mast & Harbour"}]}
+2023-05-31 07:47:32,994 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Write To Console [531 ms]
+2023-05-31 07:47:32,994 [1] INFO Tap.RobotLauncher.Dashboard - Sequence finished -> Get All Brands List...
+2023-05-31 07:47:32,994 [1] INFO Tap.RobotLauncher.Dashboard - 	Sequence started -> Invoke Workflow...
+2023-05-31 07:47:33,481 [1] INFO Tap.RobotLauncher.Dashboard - Starting robot on process 10504
+2023-05-31 07:47:33,481 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Open Browser [INVOKED]
+2023-05-31 07:47:35,859 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Open Browser [2374 ms] [INVOKED]
+2023-05-31 07:47:35,859 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Click SignUp/Login [INVOKED]
+2023-05-31 07:47:38,318 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Click SignUp/Login [2458 ms] [INVOKED]
+2023-05-31 07:47:38,318 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Set Name [INVOKED]
+2023-05-31 07:47:39,017 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Set Name [697 ms] [INVOKED]
+2023-05-31 07:47:39,017 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Set Email [INVOKED]
+2023-05-31 07:47:40,643 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Set Email [1623 ms] [INVOKED]
+2023-05-31 07:47:40,645 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Click SignUp [INVOKED]
+2023-05-31 07:47:42,031 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Click SignUp [1386 ms] [INVOKED]
+2023-05-31 07:47:42,031 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Click Gender [INVOKED]
+2023-05-31 07:47:42,654 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Click Gender [620 ms] [INVOKED]
+2023-05-31 07:47:42,654 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Set Password [INVOKED]
+2023-05-31 07:47:44,132 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Set Password [1476 ms] [INVOKED]
+2023-05-31 07:47:44,132 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Set day [INVOKED]
+2023-05-31 07:47:45,033 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Set day [898 ms] [INVOKED]
+2023-05-31 07:47:45,033 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Set month [INVOKED]
+2023-05-31 07:47:45,798 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Set month [762 ms] [INVOKED]
+2023-05-31 07:47:45,798 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Set year [INVOKED]
+2023-05-31 07:47:46,652 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Set year [851 ms] [INVOKED]
+2023-05-31 07:47:46,652 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Set Name [INVOKED]
+2023-05-31 07:47:47,289 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Set Name [635 ms] [INVOKED]
+2023-05-31 07:47:47,289 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Set Last [INVOKED]
+2023-05-31 07:47:48,219 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Set Last [928 ms] [INVOKED]
+2023-05-31 07:47:48,219 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Set Address [INVOKED]
+2023-05-31 07:47:48,842 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Set Address [620 ms] [INVOKED]
+2023-05-31 07:47:48,842 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Set Country [INVOKED]
+2023-05-31 07:47:49,694 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Set Country [851 ms] [INVOKED]
+2023-05-31 07:47:49,694 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Set State [INVOKED]
+2023-05-31 07:47:50,687 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Set State [991 ms] [INVOKED]
+2023-05-31 07:47:50,687 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Set city [INVOKED]
+2023-05-31 07:47:51,326 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Set city [637 ms] [INVOKED]
+2023-05-31 07:47:51,326 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Set zipcode [INVOKED]
+2023-05-31 07:47:52,006 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Set zipcode [678 ms] [INVOKED]
+2023-05-31 07:47:52,006 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Set Mobile [INVOKED]
+2023-05-31 07:47:52,936 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Set Mobile [928 ms] [INVOKED]
+2023-05-31 07:47:52,936 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Click CreateAcount  [INVOKED]
+2023-05-31 07:47:53,535 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Click CreateAcount  [595 ms] [INVOKED]
+2023-05-31 07:47:53,535 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Wait For Confirmation [INVOKED]
+2023-05-31 07:47:55,434 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Wait For Confirmation [1897 ms] [INVOKED]
+2023-05-31 07:47:55,434 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Write in console confirmation [INVOKED]
+2023-05-31 07:47:55,843 [1] INFO Tap.RobotLauncher.Dashboard - Element successfully located [INVOKED]
+2023-05-31 07:47:56,016 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Write in console confirmation [578 ms] [INVOKED]
+2023-05-31 07:47:56,016 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Click Continue After Register [INVOKED]
+2023-05-31 07:47:56,725 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Click Continue After Register [707 ms] [INVOKED]
+2023-05-31 07:47:56,925 [1] INFO Tap.RobotLauncher.Dashboard - Starting robot on process 10504
+2023-05-31 07:47:56,925 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Click Delogare [INVOKED] [INVOKED]
+2023-05-31 07:47:58,544 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Click Delogare [1612 ms] [INVOKED] [INVOKED]
+2023-05-31 07:47:58,544 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Click Login [INVOKED] [INVOKED]
+2023-05-31 07:48:01,045 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Click Login [2499 ms] [INVOKED] [INVOKED]
+2023-05-31 07:48:01,045 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Set correct Email [INVOKED] [INVOKED]
+2023-05-31 07:48:03,853 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Set correct Email [2805 ms] [INVOKED] [INVOKED]
+2023-05-31 07:48:03,853 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Set wrong password [INVOKED] [INVOKED]
+2023-05-31 07:48:06,506 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Set wrong password [2651 ms] [INVOKED] [INVOKED]
+2023-05-31 07:48:06,506 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Click LoginButton [INVOKED] [INVOKED]
+2023-05-31 07:48:07,107 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Click LoginButton [599 ms] [INVOKED] [INVOKED]
+2023-05-31 07:48:07,107 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Check wrong password pop-up [INVOKED] [INVOKED]
+2023-05-31 07:48:08,168 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Check wrong password pop-up [1056 ms] [INVOKED] [INVOKED]
+2023-05-31 07:48:08,170 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Set Correct Password [INVOKED] [INVOKED]
+2023-05-31 07:48:10,824 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Set Correct Password [2653 ms] [INVOKED] [INVOKED]
+2023-05-31 07:48:10,824 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Click LoginButton Again [INVOKED] [INVOKED]
+2023-05-31 07:48:11,454 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Click LoginButton Again [629 ms] [INVOKED] [INVOKED]
+2023-05-31 07:48:11,454 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Wait For Element Attribute [INVOKED] [INVOKED]
+2023-05-31 07:48:13,321 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Wait For Element Attribute [1864 ms] [INVOKED] [INVOKED]
+2023-05-31 07:48:13,321 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Login success [INVOKED] [INVOKED]
+2023-05-31 07:48:13,706 [1] INFO Tap.RobotLauncher.Dashboard - Element succesfully located! Login confirmed. [INVOKED] [INVOKED]
+2023-05-31 07:48:13,874 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Login success [551 ms] [INVOKED] [INVOKED]
+2023-05-31 07:48:14,306 [1] INFO Tap.RobotLauncher.Dashboard - Starting robot on process 10504
+2023-05-31 07:48:14,306 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Click AddToCart [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:18,770 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Click AddToCart [4462 ms] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:18,770 [1] INFO Tap.RobotLauncher.Dashboard - Started action: ItemAddedSuccess  [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:19,967 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: ItemAddedSuccess  [1195 ms] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:19,967 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Click ViewCart Button [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:21,634 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Click ViewCart Button [1664 ms] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:21,638 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Wait For Element Attribute [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:22,614 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Wait For Element Attribute [977 ms] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:22,614 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Write To Console [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:22,912 [1] INFO Tap.RobotLauncher.Dashboard - Selected Item added to cart successfully [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:23,078 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Write To Console [461 ms] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:23,350 [1] INFO Tap.RobotLauncher.Dashboard - Starting robot on process 10504
+2023-05-31 07:48:23,358 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Click Products [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:26,893 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Click Products [3536 ms] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:26,893 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Set Search text [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:27,793 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Set Search text [898 ms] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:27,793 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Click Search [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:28,517 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Click Search [721 ms] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:28,517 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Wait For searched element to locate [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:30,309 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Wait For searched element to locate [1790 ms] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:30,309 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Click Add to Cart [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:31,869 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Click Add to Cart [1557 ms] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:31,869 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Click view Cart [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:32,683 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Click view Cart [812 ms] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:32,683 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Wait For Element to be visible in cart [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:33,642 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Wait For Element to be visible in cart [955 ms] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:33,642 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Write To Console [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:33,955 [1] INFO Tap.RobotLauncher.Dashboard - Element: Summer White Top is in cart [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:34,117 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Write To Console [472 ms] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:34,117 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Click Remove from Cart [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:36,580 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Click Remove from Cart [2460 ms] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:36,580 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Check if removed element is present [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:41,504 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Check if removed element is present [4921 ms] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:41,504 [1] INFO Tap.RobotLauncher.Dashboard - Error for action [Web.Browser.WaitForAttribute] id= [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:41,504 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Element not found [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:41,880 [1] INFO Tap.RobotLauncher.Dashboard - Se astepta o eroare, daca aceasta este inseamna ca testul a reusit si productul sters nu mai este in cos. [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:42,053 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Element not found [545 ms] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:42,241 [1] INFO Tap.RobotLauncher.Dashboard - Starting robot on process 10504
+2023-05-31 07:48:42,241 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Click Proceed to Checkout [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:44,728 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Click Proceed to Checkout [2483 ms] [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:44,728 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Wait For Element Attribute [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:45,738 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Wait For Element Attribute [1007 ms] [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:45,738 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Click Place Order Button [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:46,382 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Click Place Order Button [642 ms] [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:46,382 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Wait For Element Attribute [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:47,353 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Wait For Element Attribute [966 ms] [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:47,354 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Set Name [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:49,067 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Set Name [1712 ms] [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:49,067 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Set Card number [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:50,597 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Set Card number [1528 ms] [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:50,597 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Set CVV [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:52,083 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Set CVV [1481 ms] [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:52,083 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Set Date [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:53,795 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Set Date [1710 ms] [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:53,795 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Set Year [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:55,644 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Set Year [1846 ms] [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:55,644 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Click Pay Button [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:59,209 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Click Pay Button [3563 ms] [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:48:59,209 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Wait Order Placed Text [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:49:00,409 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Wait Order Placed Text [1197 ms] [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:49:00,409 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Comanda plasata cu succes [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:49:00,754 [1] INFO Tap.RobotLauncher.Dashboard - Comanda a fost achitata cu succes! [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:49:00,927 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Comanda plasata cu succes [515 ms] [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:49:00,927 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Click Element [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:49:04,463 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Click Element [3533 ms] [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:49:04,767 [1] INFO Tap.RobotLauncher.Dashboard - Starting robot on process 10504
+2023-05-31 07:49:04,767 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Click Delete Account Button [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:49:06,733 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Click Delete Account Button [1961 ms] [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:49:06,733 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Wait For Deleted succesfully [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:49:07,899 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Wait For Deleted succesfully [1163 ms] [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:49:07,899 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Click Login [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:49:10,391 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Click Login [2490 ms] [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:49:10,391 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Set Email [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:49:12,462 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Set Email [2068 ms] [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:49:12,462 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Set Password [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:49:14,506 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Set Password [2041 ms] [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:49:14,506 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Click Login [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:49:15,107 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Click Login [602 ms] [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:49:15,107 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Wait For Incorrect details [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:49:16,213 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Wait For Incorrect details [1100 ms] [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:49:16,213 [1] INFO Tap.RobotLauncher.Dashboard - Started action: Write To Console [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:49:16,558 [1] INFO Tap.RobotLauncher.Dashboard - Profil sters cu succes! [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:49:16,731 [1] INFO Tap.RobotLauncher.Dashboard - Finished action: Write To Console [516 ms] [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED] [INVOKED]
+2023-05-31 07:49:16,731 [1] INFO Tap.RobotLauncher.Dashboard - Sequence finished -> Invoke Workflow...
+2023-05-31 07:49:16,747 [1] INFO Tap.RobotLauncher.Dashboard - Finished robot on process 10504

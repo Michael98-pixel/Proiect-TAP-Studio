@@ -1,0 +1,107 @@
+<RobotDefinition robotId="2768" robotName="Delogare Si Logare" editPoint="587,298" editZoom="1">
+  <controlIdentifiers>
+    <ctrlID name="[None]">
+      <window proc="" cls="" caption="" framework="win32" />
+    </ctrlID>
+    <ctrlID name="Delogare">
+      <window framework="chrome" caption="automationexercise.com" />
+      <web controlType="header" id="header" />
+      <web cls="header-middle" controlType="div" />
+      <web cls="container" controlType="div" />
+      <web cls="row" controlType="div" />
+      <web cls="col-sm-8" controlType="div" />
+      <web cls="shop-menu.pull-right" controlType="div" />
+      <web cls="nav.navbar-nav" controlType="ul" />
+      <web controlType="li" />
+      <web controlType="a" href="/logout" />
+    </ctrlID>
+    <ctrlID name="Click Login">
+      <window framework="chrome" caption="automationexercise.com/login" />
+      <web controlType="header" id="header" />
+      <web cls="header-middle" controlType="div" />
+      <web cls="container" controlType="div" />
+      <web cls="row" controlType="div" />
+      <web cls="col-sm-8" controlType="div" />
+      <web cls="shop-menu.pull-right" controlType="div" />
+      <web cls="nav.navbar-nav" controlType="ul" />
+      <web controlType="li" />
+      <web controlType="a" href="/login" />
+    </ctrlID>
+    <ctrlID name="emailInputLogin">
+      <window framework="chrome" caption="automationexercise.com/login" />
+      <web controlType="section" id="form" />
+      <web cls="container" controlType="div" />
+      <web cls="row" controlType="div" />
+      <web cls="col-sm-4.col-sm-offset-1" controlType="div" />
+      <web cls="login-form" controlType="div" />
+      <web controlType="form" />
+      <web controlType="input" />
+    </ctrlID>
+    <ctrlID name="passInputLogin">
+      <window framework="chrome" caption="automationexercise.com/login" />
+      <web controlType="section" id="form" />
+      <web cls="container" controlType="div" />
+      <web cls="row" controlType="div" />
+      <web cls="col-sm-4.col-sm-offset-1" controlType="div" />
+      <web cls="login-form" controlType="div" />
+      <web controlType="form" />
+      <web controlType="input" />
+    </ctrlID>
+    <ctrlID name="buttonLogin">
+      <window framework="chrome" caption="automationexercise.com/login" />
+      <web controlType="section" id="form" />
+      <web cls="container" controlType="div" />
+      <web cls="row" controlType="div" />
+      <web cls="col-sm-4.col-sm-offset-1" controlType="div" />
+      <web cls="login-form" controlType="div" />
+      <web controlType="form" />
+      <web cls="btn.btn-default" controlType="button" />
+    </ctrlID>
+    <ctrlID name="yourEmailOrPassIsIncorrect">
+      <window framework="chrome" caption="automationexercise.com/login" />
+      <web controlType="section" id="form" />
+      <web cls="container" controlType="div" />
+      <web cls="row" controlType="div" />
+      <web cls="col-sm-4.col-sm-offset-1" controlType="div" />
+      <web cls="login-form" controlType="div" />
+      <web controlType="form" />
+      <web controlType="p" />
+    </ctrlID>
+    <ctrlID name="checkLoginSuccess">
+      <window framework="chrome" caption="automationexercise.com" />
+      <web controlType="header" id="header" />
+      <web cls="header-middle" controlType="div" />
+      <web cls="container" controlType="div" />
+      <web cls="row" controlType="div" />
+      <web cls="col-sm-8" controlType="div" />
+      <web cls="shop-menu.pull-right" controlType="div" />
+      <web cls="nav.navbar-nav" controlType="ul" />
+      <web controlType="li" />
+      <web controlType="a" />
+      <web controlType="b" />
+    </ctrlID>
+  </controlIdentifiers>
+  <variables />
+  <arguments />
+  <actions>
+    <sequence id="1146" name="Incercare logare cu parola gresita" positionX="41" positionY="118" startNodePosition="8,0" fromConnector="c7" toConnector="c2" startPath="">
+      <transitions>
+        <transition id="2769" name="" condition="true" type="Normal" sourceSequence="1146" targetSequence="1480" fromConnector="c5" toConnector="c4" />
+      </transitions>
+      <action id="1148" type="Web.Browser.ClickElement" ctrlIdRef="Delogare" selector="&quot;a[href='/logout']&quot;" url="&quot;automationexercise.com&quot;" displayName="Click Delogare" waitBefore="1000" waitAfter="150" abortOnError="True" retryTimes="0" />
+      <action id="1149" type="Web.Browser.ClickElement" ctrlIdRef="Click Login" selector="&quot;a[href='/login']&quot;" url="&quot;automationexercise.com&quot;" displayName="Click Login" waitBefore="150" waitAfter="2000" abortOnError="True" retryTimes="0" />
+      <action id="1150" type="Web.Browser.SetElementText" ctrlIdRef="emailInputLogin" selector="&quot;input[data-qa='login-email']&quot;" url="&quot;https://automationexercise.com/login&quot;" value="&quot;mihai521918210@gmail.com&quot;" displayName="Set correct Email" waitBefore="150" waitAfter="2000" abortOnError="True" retryTimes="0" />
+      <action id="1162" type="Web.Browser.SetElementText" ctrlIdRef="passInputLogin" selector="&quot;input[placeholder='Password']&quot;" url="&quot;automationexercise.com/login&quot;" value="&quot;Mihail5&quot;" displayName="Set wrong password" waitBefore="150" waitAfter="2000" abortOnError="True" retryTimes="0" />
+      <action id="1175" type="Web.Browser.ClickElement" ctrlIdRef="buttonLogin" selector="&quot;button[data-qa='login-button']&quot;" url="&quot;automationexercise.com/login&quot;" displayName="Click LoginButton" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+      <action id="1174" type="Web.Browser.WaitForAttribute" ctrlIdRef="yourEmailOrPassIsIncorrect" selector="&quot;body &gt; section:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; form:nth-child(2) &gt; p:nth-child(4)&quot;" url="&quot;automationexercise.com/login&quot;" timeout="10000" _attrName="" _attrValue="" displayName="Check wrong password pop-up" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+      <action id="1399" type="Web.Browser.SetElementText" ctrlIdRef="passInputLogin" selector="&quot;input[placeholder='Password']&quot;" url="&quot;automationexercise.com/login&quot;" value="&quot;Mihail98&quot;" displayName="Set Correct Password" waitBefore="150" waitAfter="2000" abortOnError="True" retryTimes="0" />
+      <action id="1411" type="Web.Browser.ClickElement" ctrlIdRef="Click Login" selector="&quot;button[data-qa='login-button']&quot;" url="&quot;automationexercise.com/login&quot;" displayName="Click LoginButton Again" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+      <action id="1456" type="Web.Browser.WaitForAttribute" ctrlIdRef="checkLoginSuccess" selector="&quot;ul[class='nav navbar-nav'] li a b&quot;" url="&quot;automationexercise.com&quot;" timeout="10000" _attrName="" _attrValue="" displayName="Wait For Element Attribute" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+      <action id="1457" type="Logging.ConsoleWrite" output="&quot;Element succesfully located! Login confirmed.&quot;" displayName="Login success" waitBefore="150" waitAfter="150" abortOnError="True" retryTimes="0" />
+    </sequence>
+    <invoke id="1480" name="Invoke Workflow" invokeWorkflow="&quot;Add to Cart functionality.tapflow&quot;" positionX="547" positionY="265">
+      <transitions />
+      <arguments />
+    </invoke>
+  </actions>
+</RobotDefinition>
